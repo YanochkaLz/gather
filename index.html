@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Yana Lazarieva">
+  <meta name="language" content="en">
+  <title>Gather</title>
+
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <meta name="description"
+    content="Gather all your marketing activities in one place. Enjoy powerful and lightweight task management, a comprehensive financial overview, and a bunch of great features to get started.">
+  <meta name="keywords"
+    content="marketing, task management, financial overview, team collaboration, marketing platform, business tools">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gather All Marketing Activities in One Place">
+  <meta property="og:description"
+    content="Gather is a multi-functional all-in-one platform for teams to manage their marketing activities, track performance, and optimize workflows.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container d-flex justify-content-between align-items-center">
+      <button data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+        class="btn btn-dark header__buttons_menu">
+        <img src="./assets/header/menu.png" alt="Menu">
+      </button>
+      <div class="header__left d-flex align-items-center">
+        <a href="#" class="logo d-flex align-items-center">
+          <img class="logo__img" src="./assets/logo.svg" alt="Logo">
+          <div class="logo__text">Gather</div>
+        </a>
+        <nav class="header__nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__buttons d-flex align-items-center">
+        <a href="#" class="btn btn-dark">Log in</a>
+        <a href="#" class="btn btn-primary">Get started</a>
+        <a href="#" class="btn btn-dark header__buttons_login">
+          <img src="./assets/header/login.png" alt="Login">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <sidebar class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="justify-content-between offcanvas-header">
+      <a href="#" class="logo d-flex align-items-center">
+        <img class="logo__img" src="./assets/logo.svg" alt="Logo">
+        <div class="logo__text">Gather</div>
+      </a>
+      <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+        <img src="./assets/header/cancel.png" alt="vCancel">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="offcanvas__nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </sidebar>
+
+  <main>
+    <div class="main-container">
+      <section>
+        <div class="intro">
+          <div class="intro__content text-center">
+            <p class="intro__version">Released version 2-3</p>
+            <h1 class="intro__title">Gather all marketing activities in one place</h1>
+            <p class="main-text intro__subtitle">Lorem ipsum dolor sit amet consectetur. Lectus egestas a sit at.
+              Gravida nisl ac
+              suspendisse morbi
+            </p>
+            <a href="#" class="btn btn-primary btn-1">Get already today</a>
+          </div>
+
+          <div class="intro__features">
+            <div class="features-wrapper">
+              <div class="features">
+                <div class="box features__item box1">
+                  <h3 class="features__item_title">Payment</h3>
+                  <ul class="features__item_list">
+                    <li class="payment__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="payment__item_img">
+                          <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="payment__item_title">Medium</div>
+                          <div class="payment__item_date">02:02 pm</div>
+                        </div>
+                      </div>
+                      <div class="payment__item_price">
+                        -$120.53
+                      </div>
+                    </li>
+                    <li class="payment__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="payment__item_img">
+                          <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="payment__item_title">Facebook</div>
+                          <div class="payment__item_date">02:02 pm</div>
+                        </div>
+                      </div>
+                      <div class="payment__item_price">
+                        -$120.53
+                      </div>
+                    </li>
+                    <li class="payment__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="payment__item_img">
+                          <img class="" src="./assets/intro/google.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="payment__item_title">Google</div>
+                          <div class="payment__item_date">02:02 pm</div>
+                        </div>
+                      </div>
+                      <div class="payment__item_price">
+                        -$120.53
+                      </div>
+                    </li>
+                    <li class="payment__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="payment__item_img">
+                          <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="payment__item_title">Melcim</div>
+                          <div class="payment__item_date">02:02 pm</div>
+                        </div>
+                      </div>
+                      <div class="payment__item_price">
+                        -$120.53
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="box features__item box2">
+                  <h3 class="features__item_title">Budget spent</h3>
+                  <div class="budget-spent">
+                    <div class="chart">
+                      <canvas class="budgetChart"></canvas>
+                      <div class="chart__percent">64%</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="budget-spent__price">$1243</div>
+                      <div class="budget-spent__subtitle">64% of your profit this month</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box features__item py-4 box3">
+                  <div class="indicator">
+                    <h3 class="indicator__number">12</h3>
+                    <div class="indicator__property">Client</div>
+                  </div>
+                </div>
+                <div class="box features__item py-4 box4">
+                  <div class="indicator">
+                    <h3 class="indicator__number">6</h3>
+                    <div class="indicator__property">New Orders</div>
+                  </div>
+                </div>
+                <div class="box features__item box5">
+                  <h3 class="features__item_title">Team member</h3>
+                  <ul class="features__item_list">
+                    <li class="team__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="team__item_img">
+                          <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="team__item_title">Jacob Skot</div>
+                          <div class="team__item_date">Manager</div>
+                        </div>
+                      </div>
+                      <img src="./assets/intro/menu.png" alt="Menu">
+                    </li>
+                    <li class="team__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="team__item_img">
+                          <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="team__item_title">Jacob Skot</div>
+                          <div class="team__item_date">Manager</div>
+                        </div>
+                      </div>
+                      <img src="./assets/intro/menu.png" alt="Menu">
+                    </li>
+                    <li class="team__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="team__item_img">
+                          <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="team__item_title">Jacob Skot</div>
+                          <div class="team__item_date">Manager</div>
+                        </div>
+                      </div>
+                      <img src="./assets/intro/menu.png" alt="Menu">
+                    </li>
+                    <li class="team__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="team__item_img">
+                          <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                        </div>
+                        <div>
+                          <div class="team__item_title">Jacob Skot</div>
+                          <div class="team__item_date">Manager</div>
+                        </div>
+                      </div>
+                      <img src="./assets/intro/menu.png" alt="Menu">
+                    </li>
+                  </ul>
+                </div>
+                <div style="width: 84%;" class="box features__item accent box6">
+                  <div class="target-spent">
+                    <h3 class="target-spent__number">42,8%</h3>
+                    <div class="target-spent__property text-dark">of monthly target spent</div>
+                  </div>
+                </div>
+                <div class="box features__item box7">
+                  <h3 class="features__item_title">My tasks</h3>
+                  <ul class="features__item_list">
+                    <li class="task__item task__item--active d-flex align-items-center gap-3">
+                      <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                      <div>
+                        <div class="task__item_title">Online meeting</div>
+                        <div class="task__item_date">02:02 pm</div>
+                      </div>
+                    </li>
+                    <li class="task__item d-flex align-items-center gap-3">
+                      <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                      <div>
+                        <div class="task__item_title">Online meeting</div>
+                        <div class="task__item_date">02:02 pm</div>
+                      </div>
+                    </li>
+                    <li class="task__item d-flex align-items-center gap-3">
+                      <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                      <div>
+                        <div class="task__item_title">Online meeting</div>
+                        <div class="task__item_date">02:02 pm</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-2">Get already today</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="box welcome">
+          <div class="title-badge">Welcome</div>
+          <h2 class="heading--large">Gather is a multi functional aii-in-one platform for teams</h2>
+          <div class="d-flex justify-content-center welcome__statistic">
+            <div class="welcome__statistic_item">
+              <h3 class="welcome__statistic_number">120+</h3>
+              <div class="welcome__statistic_title">Useful widgets</div>
+            </div>
+            <div class="welcome__statistic_item">
+              <h3 class="welcome__statistic_number">20+</h3>
+              <div class="welcome__statistic_title">Integrations</div>
+            </div>
+            <div class="welcome__statistic_item">
+              <h3 class="welcome__statistic_number">50+</h3>
+              <div class="welcome__statistic_title">Feaures palnned</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="budget d-flex justify-content-between gap-5">
+          <div class="budget__left">
+            <div class="box features__item">
+              <h3 class="features__item_title">Budget spent</h3>
+              <div class="budget-spent">
+                <div class="chart">
+                  <canvas class="budgetChart"></canvas>
+                  <div class="chart__percent">64%</div>
+                </div>
+                <div class="justify-content-between d-none chart-info">
+                  <div class="budget-spent__price">$1243</div>
+                  <div class="budget-spent__subtitle">64% of your profit this month</div>
+                </div>
+              </div>
+            </div>
+            <div class="box features__item">
+              <h3 class="features__item_title">Payment</h3>
+              <ul class="features__item_list">
+                <li class="payment__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="payment__item_img">
+                      <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="payment__item_title">Medium</div>
+                      <div class="payment__item_date">02:02 pm</div>
+                    </div>
+                  </div>
+                  <div class="payment__item_price">
+                    -$120.53
+                  </div>
+                </li>
+                <li class="payment__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="payment__item_img">
+                      <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="payment__item_title">Facebook</div>
+                      <div class="payment__item_date">02:02 pm</div>
+                    </div>
+                  </div>
+                  <div class="payment__item_price">
+                    -$120.53
+                  </div>
+                </li>
+                <li class="payment__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="payment__item_img">
+                      <img class="" src="./assets/intro/google.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="payment__item_title">Google</div>
+                      <div class="payment__item_date">02:02 pm</div>
+                    </div>
+                  </div>
+                  <div class="payment__item_price">
+                    -$120.53
+                  </div>
+                </li>
+                <li class="payment__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="payment__item_img">
+                      <img class="" src="./assets/intro/facebook.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="payment__item_title">Melcim</div>
+                      <div class="payment__item_date">02:02 pm</div>
+                    </div>
+                  </div>
+                  <div class="payment__item_price">
+                    -$120.53
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="budget__right">
+            <div class="title-badge">Budget control</div>
+            <h2 class="heading--large">A nice and simple financial <br> overview</h2>
+            <p class="main-text">
+              Fermentum amet morbi in porttitor faucibus interdum interdum in. Gravida porttitor vulputate amet nulla
+              at tortor erat vel. Turpis at aucibus interd
+            </p>
+            <ul class="budget__right_list">
+              <li class="budget__right_item">
+                <img src="./assets/budget/default-avatar.png" alt="Default Avatar">
+                <span class="main-text">Lorem ipsum dolor</span>
+              </li>
+              <li class="budget__right_item">
+                <img src="./assets/budget/default-avatar.png" alt="Default Avatar">
+                <span class="main-text">Lorem ipsum dolor</span>
+              </li>
+              <li class="budget__right_item">
+                <img src="./assets/budget/default-avatar.png" alt="Default Avatar">
+                <span class="main-text">Lorem ipsum dolor</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="main-features">
+          <div class="text-center">
+            <div class="title-badge">Main features</div>
+            <h2 class="heading--large">A bunch of freat features to get you started</h2>
+          </div>
+
+          <div class="main-features__list">
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="d-flex management justify-content-between gap-5">
+          <div class="management__left">
+            <div class="title-badge">My management</div>
+            <h2 class="heading--large">Easily manage your team’s tasks</h2>
+            <p class="main-text">
+              Fermentum amet morbi in porttitor faucibus interdum interdum in. Gravida porttitor vulputate amet nulla at
+              tortor erat vel. Turpis at aucibus interd
+            </p>
+            <a href="#" class="btn btn-primary">Get already today</a>
+          </div>
+
+          <div class="management__right">
+            <div class="box features__item">
+              <h3 class="features__item_title">My tasks</h3>
+              <ul class="features__item_list">
+                <li class="task__item task__item--active d-flex align-items-center gap-3">
+                  <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                  <div>
+                    <div class="task__item_title">Online meeting</div>
+                    <div class="task__item_date">02:02 pm</div>
+                  </div>
+                </li>
+                <li class="task__item d-flex align-items-center gap-3">
+                  <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                  <div>
+                    <div class="task__item_title">Online meeting</div>
+                    <div class="task__item_date">02:02 pm</div>
+                  </div>
+                </li>
+                <li class="task__item d-flex align-items-center gap-3">
+                  <div class="task__item_img d-flex align-items-center justify-content-center"></div>
+                  <div>
+                    <div class="task__item_title">Online meeting</div>
+                    <div class="task__item_date">02:02 pm</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box features__item">
+              <h3 class="features__item_title">Team member</h3>
+              <ul class="features__item_list">
+                <li class="team__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="team__item_img">
+                      <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="team__item_title">Jacob Skot</div>
+                      <div class="team__item_date">Manager</div>
+                    </div>
+                  </div>
+                  <img src="./assets/intro/menu.png" alt="Menu">
+                </li>
+                <li class="team__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="team__item_img">
+                      <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="team__item_title">Jacob Skot</div>
+                      <div class="team__item_date">Manager</div>
+                    </div>
+                  </div>
+                  <img src="./assets/intro/menu.png" alt="Menu">
+                </li>
+                <li class="team__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="team__item_img">
+                      <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="team__item_title">Jacob Skot</div>
+                      <div class="team__item_date">Manager</div>
+                    </div>
+                  </div>
+                  <img src="./assets/intro/menu.png" alt="Menu">
+                </li>
+                <li class="team__item d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="team__item_img">
+                      <img class="" src="./assets/intro/avatar.png" alt="Facebook">
+                    </div>
+                    <div>
+                      <div class="team__item_title">Jacob Skot</div>
+                      <div class="team__item_date">Manager</div>
+                    </div>
+                  </div>
+                  <img src="./assets/intro/menu.png" alt="Menu">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="feedback box">
+          <div class="text-center">
+            <div class="title-badge border-0">Main features</div>
+            <h2 class="heading--large">Don’t take our words for it - listen to our clients</h2>
+          </div>
+
+          <div class="feedback__list">
+            <div class="feedback__item">
+              <div>
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+              </div>
+              <p class="feedback__item_text">Fermentum amet morbi in porttitor faucibus interdum in to interdum in.</p>
+              <div>
+                <div class="feedback__item_author">Jacob Skot</div>
+                <div class="feedback__item_position">Manager</div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <div>
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+              </div>
+              <p class="feedback__item_text">Fermentum amet morbi in porttitor faucibus interdum in to interdum in.</p>
+              <div>
+                <div class="feedback__item_author">Jacob Skot</div>
+                <div class="feedback__item_position">Manager</div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <div>
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+              </div>
+              <p class="feedback__item_text">Fermentum amet morbi in porttitor faucibus interdum in to interdum in.</p>
+              <div>
+                <div class="feedback__item_author">Jacob Skot</div>
+                <div class="feedback__item_position">Manager</div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <div>
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+                <img class="feedback__item_star" src="./assets/feedback/star.png" alt="Star">
+              </div>
+              <p class="feedback__item_text">Fermentum amet morbi in porttitor faucibus interdum in to interdum in.</p>
+              <div>
+                <div class="feedback__item_author">Jacob Skot</div>
+                <div class="feedback__item_position">Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="d-flex align-items-center justify-content-between gap-5 task-management">
+          <div class="task-management__left">
+            <div class="task-management__img">
+              <img src="./assets/task-management/girl.png" alt="Girl">
+            </div>
+            <div class="d-flex align-items-center task-management__statistic">
+              <div>
+                <div class="task-management__statistic_number">51</div>
+                <div class="task-management__statistic_property">of monthly target spent</div>
+              </div>
+              <div class="calendar">
+                <img src="./assets/task-management/green-calendar.png" alt="Calendar">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-management__right">
+            <h2 class="task-management__title">Powerful and light weight task managment</h2>
+            <p class="main-text">
+              Fermentum amet morbi in porttitor faucibus interdum interdum in. Gravida scelerisque porttitor vulputate
+              amet nulla at tortor erat vel.
+            </p>
+            <ul class="task-management__list">
+              <li class="d-flex align-items-center task-management__item">
+                <div class="task-management__item_number">200+</div>
+                <div class="task-management__item_text">Fermentum amet morbi in porttitor faucibus interdum interdum in.
+                  Gravida scelerisque</div>
+              </li>
+              <li class="d-flex align-items-center task-management__item">
+                <div class="task-management__item_number">200+</div>
+                <div class="task-management__item_text">Fermentum amet morbi in porttitor faucibus interdum interdum in.
+                  Gravida scelerisque</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="d-flex align-items-center justify-content-between gap-5 help">
+          <div class="help__left">
+            <div class="help__left_content">
+              <h2 class="help__title">We’re here to guide and help you at all times</h2>
+              <p class="main-text">
+                Fermentum amet morbi in porttitor faucibus interdum interdum in our Gravida scelerisque porttitor
+              </p>
+              <a href="#" class="btn btn-primary btn-read">Read more</a>
+            </div>
+          </div>
+          <div class="help__right">
+            <div class="box main-features__item box1">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item box2">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+            <div class="box main-features__item box3">
+              <div class="calendar">
+                <img src="./assets/features/calendar.png" alt="Calendar">
+              </div>
+              <h3 class="main-features__item_title">Lorem ipsum dolor</h3>
+              <p class="main-features__item_desc">
+                Lorem ipsum dolor sit amet consectetur. Nec sed egestas netus odio. Interdum
+              </p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary d-none btn-get">Get already today</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="clients">
+          <div class="title-badge">Clients and partners</div>
+          <h2 class="heading--large">We partner with some of the best companies</h2>
+          <div class="d-flex align-items-center flex-wrap clients__list">
+            <div class="box clients__item">Truely</div>
+            <div class="box clients__item">Cruew</div>
+            <div class="box clients__item">Mark</div>
+            <div class="box clients__item">Some</div>
+            <div class="box clients__item">Triicks</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="d-flex align-items-center justify-content-between gap-5 task-management team-members">
+          <div class="task-management__left">
+            <h2 class="task-management__title">Great overview of your entire team and their tasks</h2>
+            <p class="main-text">
+              Fermentum amet morbi in porttitor faucibus interdum interdum in. Gravida scelerisque porttitor vulputate
+              amet nulla at tortor erat vel.
+            </p>
+            <p class="team-members__desc">
+              Fermentum amet morbi in porttitor faucibus interdum interdum in. Gravida scelerisque scelerisque porttitor
+              vulputate amet
+            </p>
+          </div>
+
+          <div class="task-management__right d-flex justify-content-end">
+            <div class="task-management__img">
+              <img src="./assets/task-management/girl.png" alt="Girl">
+            </div>
+            <div class="d-flex align-items-center task-management__statistic">
+              <div>
+                <div class="task-management__statistic_number">4</div>
+                <div class="task-management__statistic_property">Team members</div>
+              </div>
+              <div class="team-members__avatars">
+                <img class="man-avatar av1" src="./assets/intro/avatar.png" alt="Man">
+                <img class="man-avatar av2" src="./assets/intro/avatar.png" alt="Man">
+                <img class="man-avatar av3" src="./assets/intro/avatar.png" alt="Man">
+                <img class="man-avatar av4" src="./assets/intro/avatar.png" alt="Man">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="box accent text-center next">
+          <div class="title-badge">What’s next?</div>
+          <h2 class="heading--large">The future is here. Start your free trail</h2>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet consectetur. Lectus egestas a sit at. Gravida nisl ac suspendisse morbi
+          </p>
+          <div class="next__buttons">
+            <a href="#" class="btn btn-dark">Get already today</a>
+            <a href="#" class="btn btn-outline-dark">Compare plans</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="d-flex justify-content-between flex-wrap footer gap-5">
+      <div>
+        <a href="#" class="logo d-flex align-items-center">
+          <img class="logo__img" src="./assets/logo.svg" alt="Logo">
+          <div class="logo__text">Gather</div>
+        </a>
+        <div class="footer__text">
+          Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i
+          belogi.
+          FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+        </div>
+      </div>
+      <div class="d-flex justify-content-between footer__info">
+        <div>
+          <h4 class="footer__info_title">Pages</h4>
+          <ul class="d-flex flex-column footer__info_list">
+            <li class="footer__info_item"><a class="footer__info_link" href="#">Home it work</a></li>
+            <li class="footer__info_item"><a class="footer__info_link" href="#">Pricing</a></li>
+            <li class="footer__info_item"><a class="footer__info_link" href="#">Blog</a></li>
+            <li class="footer__info_item"><a class="footer__info_link" href="#">Demo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__info_title">Service</h4>
+          <ul class="d-flex flex-column footer__info_list">
+            <li class="footer__info_item">Shopify</li>
+            <li class="footer__info_item">WordPress</li>
+            <li class="footer__info_item">UI/UX Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__info_title">Contact</h4>
+          <ul class="d-flex flex-column footer__info_list">
+            <li class="footer__info_item">
+              <img src="./assets/footer/phone.png" alt="Call">
+              <a class="footer__info_link" href="tel:+14065550120">(406) 555-0120</a>
+            </li>
+            <li class="footer__info_item">
+              <img src="./assets/footer/email.png" alt="Message">
+              <a class="footer__info_link" href="mailto:mangcoding123@gmail.com">mangcoding123@gmail.com</a>
+            </li>
+            <li class="footer__info_item d-flex">
+              <img src="./assets/footer/location.png" height="18" alt="Location">
+              <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__tablet">
+        <ul class="footer__tablet_list">
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Home</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Psychologists</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Courses</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Tests</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">About Us</a></li>
+        </ul>
+        <ul class="footer__tablet_list">
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">FAQ</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Private Policy</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Cookies</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Settings</a></li>
+          <li class="footer__tablet_item"><a href="#" class="footer__tablet_link">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <a href="https://x.com/?lang=ru" target="_blank">
+          <img src="./assets/footer/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="./assets/footer/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://uk-ua.facebook.com/" target="_blank">
+          <img src="./assets/footer/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/login?lang=uk-UA&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Duk-UA"
+          target="_blank">
+          <img src="./assets/footer/tiktok.png" alt="Tiktok">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
